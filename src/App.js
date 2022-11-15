@@ -39,6 +39,7 @@ import {useEffect, useState} from "react"
 // export default App;
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "./App.css"
 import Programmes from "./Composants/Programmes/programmes"
 import Header from "./Composants/Programmes/Header.js"
 import Footer from "./Composants/Programmes/Footer.js"
@@ -47,7 +48,6 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <h1 className="pb-3 mb-4 font-italic border-bottom">Nos programmes</h1>
       <Programmes/>
       <Footer/>
     </div>

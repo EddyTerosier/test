@@ -4,6 +4,7 @@
     font-family: "CooperHewitt";
     src: url(../Font/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
+@import url("../style.css");
 body {
     margin: 0;
     font-family: "CooperHewitt";
@@ -94,7 +95,7 @@ footer button:hover, button:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
 
-footer a {
+footer>a {
     color: #9aa49a;
     text-decoration: none;
 }

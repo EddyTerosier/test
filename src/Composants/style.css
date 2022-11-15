@@ -1,0 +1,488 @@
+body {
+    margin: 0;
+    font-family: "CooperHewitt";
+}
+/* ------------------------- Début de la div banniere ------------------------- */
+.banniere {
+    /* background: no-repeat 40% / cover url("../images/img-accueil.jpg"); */
+    height: 986.97px;
+}
+/* 
+#vide {
+    height: 35px;
+} */
+
+
+/* ------------------------- Fin de la div banniere ------------------------- */
+
+/* ------------------------- Début du Header ------------------------- */
+
+.navbar{
+    height: 130px;
+}
+.navbar.bg-custom{
+    background-color: #35393c;
+}
+
+.collapse.navbar-collapse{
+    justify-content: space-evenly;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #87ff65;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
+    color: #9aa49a;
+}
+
+.btn-outline-custom {
+    color: #87ff65;
+    border-color: #87ff65;
+}
+
+.dropdown-item{
+    text-align: center;
+}
+
+/* ------------------------- Fin du Header ------------------------- */
+
+/* ------------------------- Début du main ------------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 300px;
+}
+
+main h1 {
+    margin-left: 80px;
+    margin-top: 50px;
+    color: white;
+}
+
+main span h1 {
+    font-family: "Stencil";
+}
+
+main h1 strong {
+    color: #87ff65;
+}
+
+/* ------------------------- Début du Carousel ------------------------- */
+
+.cta-100 {
+
+    padding-left: 8%;
+    padding-top: 7%;
+  }
+  .col-md-4{
+      padding-bottom:20px;
+  }
+  
+  .white {
+    color: #fff !important;
+  }
+  .mt{float: left;margin-top: -20px;padding-top: 20px;}
+  .bg-blue-ui {
+    background-color: #708198 !important;
+  }
+  figure img{width:300px;}
+  
+  #blogCarousel {
+    padding-bottom: 100px;
+  }
+  
+  .blog .carousel-indicators {
+    left: 0;
+    top: -50px;
+    height: 50%;
+  }
+  
+  /* The colour of the indicators */
+  
+  .blog .carousel-indicators li {
+    background: #708198;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .blog .carousel-indicators .active {
+    background: #0fc9af;
+  }
+  
+  .item-carousel-blog-block {
+    outline: medium none;
+    padding: 15px;
+  }
+  
+  .item-box-blog {
+    border: 1px solid #dadada;
+    text-align: center;
+    z-index: 4;
+    padding: 20px;
+  }
+  
+  .item-box-blog-image {
+    position: relative;
+  }
+  
+  .item-box-blog-image figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item-box-blog-date {
+    position: absolute;
+    z-index: 5;
+    padding: 4px 20px;
+    top: -20px;
+    right: 8px;
+    background-color: #41cb52;
+  }
+  
+  .item-box-blog-date span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .item-box-blog-date span.mon {
+    font-size: 18px;
+  }
+  
+  .item-box-blog-date span.day {
+    font-size: 16px;
+  }
+  
+  .item-box-blog-body {
+    padding: 10px;
+  }
+  
+  .item-heading-blog a h5 {
+    margin: 0;
+    line-height: 1;
+    text-decoration:none;
+    transition: color 0.3s;
+  }
+  
+  .item-box-blog-heading a {
+      text-decoration: none;
+  }
+  
+  .item-box-blog-data p {
+    font-size: 13px;
+  }
+  
+  .item-box-blog-data p i {
+    font-size: 12px;
+  }
+  
+  .item-box-blog-text {
+    max-height: 100px;
+    overflow: hidden;
+  }
+  
+  .mt-10 {
+    float: left;
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+  
+  .btn.bg-blue-ui.white.read {
+    cursor: pointer;
+    padding: 4px 20px;
+    float: left;
+    margin-top: 10px;
+  }
+  
+  .btn.bg-blue-ui.white.read:hover {
+    box-shadow: 0px 5px 15px inset #4d5f77;
+  }
+
+/* ------------------------- Fin du Carousel ------------------------- */
+
+
+iframe {
+    border-radius: 10px;
+    min-width: 30vh;
+    height: 315px;
+    max-height: 430px;
+    margin: 10px;
+}
+
+/* ------------------------- Fin du main ------------------------- */
+
+/* ------------------------- Début de la div Banniere 2 ------------------------- */
+
+
+.banniere_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #35393c;
+    color: #9aa49a;
+    height: 300px;
+    padding: 20px;
+}
+
+.banniere_2 h1 {
+    font-family: "Stencil";
+}
+
+.banniere_2 span {
+    text-align: center;
+}
+
+/* ------------------------- Fin de la div Banniere 2 ------------------------- */
+
+/* ------------------------- Début de la div Banniere 3 ------------------------- */
+
+
+.banniere_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c0cac0;
+    height: 190px;
+}
+
+.banniere_3 h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.banniere_3 input {
+    height: 50px;
+    width: 210px;
+    background-color: #35393C;
+    color: #87ff65;
+    border-radius: 4px;
+    border-color: #9aa49a;
+    box-shadow: black 0 5px 7px;
+    text-align: center;
+}
+
+.banniere_3 .btn-outline-custom {
+    height: 50px;
+    width: 60px;
+    background-color: #9aa49a;
+    color: #87ff65;
+    border-radius: 4px;
+    border: none;
+    box-shadow: black 0 5px 7px;
+}
+
+/* ------------------------- Fin de la div Banniere 3 ------------------------- */
+
+/* ------------------------- Début de la div Banniere 4 ------------------------- */
+
+
+.banniere_4 {
+    background-color: #9aa49a;
+    padding: 20px 0;
+}
+.banniere_4 h1 {
+    font-family: "Stencil";
+    text-align: center;
+}
+.banniere_4 span {
+    text-align: center;
+}
+
+.champs {
+    height: 30px;
+    background-color: #35393C;
+    color: #87ff65;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #9aa49a;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Test de style */
+
+.sign_in_card {
+    display: flex;
+    justify-content: center;
+}
+
+.card_content_fieldset {
+    background-color: #35393C;
+    border-radius: 4px;
+    border: none;
+    box-shadow: black 0 5px 5px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card_content_fieldset .btn_sign_in {
+    background-color: #c0cac0;
+    border-radius: 4px;
+    border-color: #35393C;
+    color: #35393C;
+}
+
+.first-legend {
+    border: 1px solid #35393C;
+    border-radius: 3px;
+    background-color: #9aa49a;
+    color: #35393C;
+    font-weight: 700;
+    box-shadow: black 0 5px 5px;
+}
+
+legend {
+    color: #87ff65;
+    margin-top: 5px;
+}
+
+div .champs-sexe label {
+    color: #9aa49a;
+}
+
+.champs {
+    color: #87ff65;
+    border-color: #9aa49a;
+    margin-bottom: 5px;
+}
+
+/* ------------------------- Fin de la div Banniere 4 ------------------------- */
+
+
+/* Début footer */
+
+.py-5 {
+    background-color: #35393C;
+    color: #87ff65;
+    padding: 0 20px;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.d-flex .btn-custom {
+    font-weight: 700;
+    color: #87ff65;
+    border-radius: 4px;
+    border-bottom: solid, #9aa49a;
+    box-shadow: black 0 5px 5px;
+}
+
+ul img {
+    vertical-align: 0px;
+}
+
+footer button:hover, button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+footer a {
+    color: #9aa49a;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #9aa49a;
+    opacity: 50%;
+}
+footer .social-media1 a:hover{
+    color: #3b5998;
+}
+
+footer .social-media2 a:hover{
+    color: #1DA1F2;
+}
+
+footer .social-media3 a:hover{
+    color:  #5851DB;
+}
+
+/* Fin footer */
+
+
+/* MEDIA QUERY TABLETTE */
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 600px;
+        height: 320px;
+    }
+
+    .banniere_4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banniere_4 .sign_in_card {
+        margin-left: 0px;
+    }
+    .card_content_fieldset {
+        width: 450px;
+    }
+    .champs{
+        width: 375px;
+        height: 40px;
+    }
+    .btn-sexe {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer form {
+        width: 300px;
+    }
+}
+
+/* MEDIA QUERY DESKTOP */
+
+@media screen and (min-width: 1024px){
+    body {
+        font-size: 1.3rem;
+    }
+
+    main {
+        row-gap: 250px;
+    }
+    iframe {
+        width: 750px;
+        height: 380px;
+    }
+
+    .banniere_3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .banniere_4{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .banniere_4 span {
+        width: 400px;
+    }
+
+    .card_content_fieldset {
+        width: 500px;
+    }
+    .btn-sexe {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer form {
+        width: 400px;
+    }
+}

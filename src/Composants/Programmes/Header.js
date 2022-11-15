@@ -1,11 +1,13 @@
 import React from 'react'
-import './programmes.css';
+import './programmes.css'
+import "../../App.css"
+import Logo from "../../Assets/Logo transparent.png"
 
 export default function Header() {
   return (
     <div class="navbar navbar-expand-md navbar-light bg-custom">
                 <div class="container">
-                    <a class="navbar-brand" href="Index.html"><img src="./images/Logo transparent.png" alt="Logo" width="110px"/></a>
+                    <a class="navbar-brand" href="Index.html"><img src={Logo} alt="Logo" width="110px"/></a>
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
