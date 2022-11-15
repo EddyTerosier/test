@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Item from "./Items";
 import { v4 as uuidv4 } from "uuid";
+import './programmes.css';
 import Card1 from "../../Assets/Carousel.jpg"
 import Card2 from "../../Assets/Carousel2.jpg"
 import Card3 from "../../Assets/Carousel3.jpg"
@@ -14,18 +15,10 @@ export default function Form(){
         {texte: "Some quick example text to build on the card title and make up the bulk of the card's content.", id: uuidv4(), name: "Intermédiaire", texte_btn: "Read more", image: Card3},
         {texte: "Some quick example text to build on the card title and make up the bulk of the card's content.", id: uuidv4(), name: "Expert", texte_btn: "Read more", image: Card2},
     ])
-
-    const deleteElement = id => {
-        const filteredState = dataArr.filter(item => {
-            return item.id !== id;
-        })
-        setDatArr(filteredState)
-    }
-
     return (
         <>
         <h1 className="pb-3 mb-4 font-italic border-bottom">Nos programmes</h1>
-        <div className="container">
+        <div className="container card1">
             <div className="row">
             {dataArr.map((item) => {
                         return (
@@ -36,7 +29,6 @@ export default function Form(){
                             key={item.id}
                             id={item.id}
                             btn={item.texte_btn}
-                            delFunc={deleteElement}
                             />
                         )
                     })}

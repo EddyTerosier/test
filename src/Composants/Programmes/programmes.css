@@ -4,7 +4,8 @@
     font-family: "CooperHewitt";
     src: url(../Font/cooper-hewitt/CooperHewitt-Medium.otf);
 } */
-@import url("../style.css");
+@import url("../main/style.css");
+
 body {
     margin: 0;
     font-family: "CooperHewitt";
@@ -26,7 +27,7 @@ h1 {
 }
 
 .collapse.navbar-collapse{
-    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
@@ -34,6 +35,9 @@ h1 {
 }
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
     color: #9aa49a;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .show>.nav-link:hover {
+    opacity: 50%;
 }
 
 .btn-outline-custom {
@@ -50,7 +54,7 @@ h1 {
 }
 
 /* ------------------------- Début Card ------------------------------ */
-#app .container {
+.card1.container {
   padding-right: 0;
 }
 .btn-read-more {
@@ -61,6 +65,9 @@ h1 {
 }
 .card-title {
   color: #87ff65;
+}
+.card-body {
+    background-color: #35393C;
 }
 
 /* ------------------------- Fin Card -------------------------------- */
@@ -113,6 +120,18 @@ footer .social-media2 a:hover{
 
 footer .social-media3 a:hover{
     color:  #5851DB;
+}
+
+.nav a{
+    --bs-nav-link-color: #9aa49a;
+    --bs-nav-link-hover-color: #9aa49a 50%;
+}
+.nav a:hover{
+    color: #9aa49a;
+    opacity: 50%;
+}
+.nav-link {
+    display: inline-block;
 }
 
 /* MEDIA QUERY TABLETTE */
