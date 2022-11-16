@@ -1,9 +1,7 @@
-/* @font-face {
-    font-family: "Stencil";
-    src: url(../Font/Stencil/Stencil.ttf);
+@font-face {
     font-family: "CooperHewitt";
-    src: url(../Font/cooper-hewitt/CooperHewitt-Medium.otf);
-} */
+    src: url("../../Font/cooper-hewitt/CooperHewitt-Medium.otf");
+}
 @import url("../main/style.css");
 
 body {
@@ -43,6 +41,7 @@ h1 {
 .btn-outline-custom {
     color: #87ff65;
     border-color: #87ff65;
+    --bs-btn-hover-color: #87ff65;
 }
 
 .dropdown-item{
@@ -52,6 +51,7 @@ h1 {
 #collapsibleNavId {
     z-index: 1;
 }
+
 
 /* ------------------------- Début Card ------------------------------ */
 .card1.container {
