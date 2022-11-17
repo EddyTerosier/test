@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from "../../Assets/Logo transparent.png"
 
 export default function Header() {
@@ -13,13 +14,13 @@ export default function Header() {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/Index.html" aria-current="page">Accueil</a>
+                        <Link to="/"><a class="nav-link active" aria-current="page">Accueil</a></Link>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Concept</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Programmes.html">Programmes</a>
+                    <Link to="/Programmes"><a class="nav-link" href="Programmes.html">Programmes</a></Link>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giga+</a>

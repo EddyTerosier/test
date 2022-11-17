@@ -4,7 +4,6 @@ import Header from '../main/Header'
 export default function Section1() {
   return (
     <div class="banniere">
-        <Header/>
         <main>
             <div>
                 <h1>Découvrez notre univers
