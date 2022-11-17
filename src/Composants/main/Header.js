@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <nav class="navbar navbar-expand-md navbar-light bg-custom">
         <div class="container">
-            <a class="navbar-brand" href="Index.html"><img src={Logo} alt="Logo" width="110px"/></a>
+        <Link to="/"><a class="navbar-brand" href="Index.html"><img src={Logo} alt="Logo" width="110px"/></a></Link>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
