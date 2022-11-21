@@ -3,11 +3,11 @@ import React from 'react'
 export default function Section4() {
   return (
     <div class="banniere_4">
-        <span>
+        <span class="box">
             <h1>Inscris-toi !</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum porro! Optio incidunt, numquam id quos, eius at laudantium explicabo atque blanditiis voluptatum recusandae possimus quasi perferendis cumque ipsum quae.</p>
         </span>
-            <div class="sign_in_card offset-md-1">
+            <div class="sign_in_card offset-md-1 box box1">
                 <form action="form.php" method="post">
                     <fieldset class="card_content_fieldset">
                         <legend class="first-legend">Inscription</legend>

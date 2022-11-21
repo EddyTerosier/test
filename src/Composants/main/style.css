@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "CooperHewitt";
+    overflow-x: hidden;
 }
 /* ------------------------- Début de la div banniere ------------------------- */
 .banniere {
@@ -312,6 +313,7 @@ footer .social-media3 a:hover{
     footer form {
         width: 300px;
     }
+    
 }
 
 /* MEDIA QUERY DESKTOP */
@@ -354,4 +356,41 @@ footer .social-media3 a:hover{
     footer form {
         width: 400px;
     }
+    /* ANIMATIONS */
+
+.banniere_2 .box {
+    transform: translateX(-100%);
+    opacity: 0!important;
+    transition: 0.5s ease;
+}
+.banniere_2 .box.box1 {
+    transform: translateX(10%);
+    transition: 0.5s ease;
+}
+.banniere_3 .box {
+    transform: translateX(-100%);
+    opacity: 0!important;
+    transition: 0.7s ease;
+}
+.banniere_3 .box.box1 {
+    transform: translateX(100%);
+    opacity: 0!important;
+    transition: 0.7s ease;
+}
+
+.banniere_4 .box {
+    transform: translateX(-50%);
+    opacity: 0!important;
+    transition: 0.7s ease;
+}
+.banniere_4 .box.box1 {
+    transform: translateX(80%);
+    opacity: 0!important;
+    transition: 0.7s ease;
+}
+
+.box.show,.box.box1.show {
+    transform: translateX(0);
+    opacity: 1!important;
+}
 }

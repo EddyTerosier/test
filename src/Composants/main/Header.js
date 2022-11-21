@@ -14,7 +14,7 @@ export default function Header() {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <Link to="/"><a id = "1" class="nav-link" aria-current="page" onClick={activeState}>Accueil</a></Link>
+                        <Link to="/"><a id = "1" class="nav-link active" aria-current="page" onClick={activeState}>Accueil</a></Link>
                     </li>
                     <li class="nav-item">
                         <a id = "2" class="nav-link" href="#" onClick={activeState}>Concept</a>
@@ -23,10 +23,10 @@ export default function Header() {
                     <Link to="/Programmes"><a id = "3" class="nav-link" href="#" onClick={activeState}>Programmes</a></Link>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giga+</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Giga+</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Abonnement premium</a>
-                            <a class="dropdown-item" href="#">Salle premium</a>
+                            <a class="dropdown-item" id="4" href="Abonnement-premium.php">Abonnement premium</a>
+                            <a class="dropdown-item" id="5" href="Salle-premium.php">Salle premium</a>
                         </div>
                     </li>
                 </ul>
@@ -40,7 +40,7 @@ export default function Header() {
   )
 }
 
-const element1 = document.getElementById("1");
+// const element1 = document.getElementById("1");
 // const element2 = document.getElementById("2");
 // const element3 = document.getElementById("3");
 // const active = document.querySelector(".active");
@@ -64,7 +64,7 @@ const element1 = document.getElementById("1");
 
 const activeState = (e)=>{
     const id = e.target.id
-    const idArray = ["1","2","3"]
+    const idArray = ["1","2","3","4","5"]
 
     idArray.forEach((element)=> {
         document.getElementById(element).classList.remove("active")
@@ -72,13 +72,12 @@ const activeState = (e)=>{
     document.getElementById(id).classList.add("active")
 }
 
-const logoLink = document.getElementById("0");
-
 function activeAccueil() {
+    const id = 1;
     const idArray = ["0","1","2","3"]
 
     idArray.forEach((element)=> {
         document.getElementById(element).classList.remove("active")
     });
-    element1.classList.add("active");
+    document.getElementById(id).classList.add("active");
 }
