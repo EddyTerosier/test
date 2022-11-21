@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <nav class="navbar navbar-expand-md navbar-light bg-custom">
         <div class="container">
-        <Link to="/"><a class="navbar-brand" href="Index.html"><img src={Logo} alt="Logo" width="115px"/></a></Link>
+        <Link to="/"><a onClick={activeRemove} class="navbar-brand" href="Index.html"><img src={Logo} alt="Logo" width="115px"/></a></Link>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -14,13 +14,13 @@ export default function Header() {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <Link to="/"><a class="nav-link active" aria-current="page">Accueil</a></Link>
+                        <Link to="/"><a id = "1" class="nav-link active" aria-current="page" onClick={activeRemove}>Accueil</a></Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Concept</a>
+                        <a id = "2" class="nav-link" href="#" onClick={activeRemove}>Concept</a>
                     </li>
                     <li class="nav-item">
-                    <Link to="/Programmes"><a class="nav-link" href="Programmes.html">Programmes</a></Link>
+                    <Link to="/Programmes"><a id = "3" class="nav-link" href="#" onClick={activeRemove}>Programmes</a></Link>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giga+</a>
@@ -39,3 +39,22 @@ export default function Header() {
     </nav>
   )
 }
+const element1 = document.getElementById("1");
+const element2 = document.getElementById("2");
+const element3 = document.getElementById("3");
+const active = document.querySelector(".active");
+const elements = element1+element2+element3;
+
+// FONCTION CLASSIQUE
+
+// function activeRemove() {
+//     if (!active) {
+//         elements.classList.add("active")
+//     } else {
+//         elements.classList.remove("active")
+//     }
+// }
+
+// FONCTION FLECHEE + TERNAIRE
+
+const activeRemove = () => {!active ? elements.classList.add("active") : elements.classList.remove("active")};
