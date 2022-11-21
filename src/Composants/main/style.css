@@ -384,7 +384,7 @@ footer .social-media3 a:hover{
     transition: 0.7s ease;
 }
 .banniere_4 .box.box1 {
-    transform: translateX(80%);
+    transform: translateY(200px);
     opacity: 0!important;
     transition: 0.7s ease;
 }
