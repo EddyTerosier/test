@@ -1,12 +1,11 @@
-{
-  "products": [
+const programmesJson = [
     {
       "id": "1",
       "name": "Débutant",
       "detail": "Lorem ipsum dolo sit amet",
       "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "texte_btn": "Read more",
-      "image": "./images/Carousel.jpg"
+      "image": require("./Assets/Carousel.jpg")
     },
     {
       "id": "2",
@@ -14,7 +13,7 @@
       "detail": "Lorem ipsum dolo sit amet",
       "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "texte_btn": "Read more",
-      "image": "./images/Carousel3.jpg"
+      "image": require("./Assets/Carousel3.jpg")
     },
     {
       "id": "3",
@@ -22,7 +21,8 @@
       "detail": "Lorem ipsum dolo sit amet",
       "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "texte_btn": "Read more",
-      "image": "./images/Carousel2.jpg"
+      "image": require("./Assets/Carousel2.jpg")
     }
   ]
-}
+
+  export default programmesJson

@@ -1,0 +1,23 @@
+[
+    {
+        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "id": 1,
+        "name": "Débutant",
+        "texte_btn": "Read more",
+        "image":"./Assets/Carousel.jpg"
+    },
+    {
+        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "id": 2,
+        "name": "Intermédiaire",
+        "texte_btn": "Read more",
+        "image": "Card3"
+    },
+    {
+        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "id": 3,
+        "name": "Expert",
+        "texte_btn": "Read more",
+        "image": "Card2"
+    }
+]
