@@ -9,9 +9,7 @@ export default function Form(){
         <h1 className="pb-3 mb-4 font-italic border-bottom">Nos programmes</h1>
         <div className="container card1">
             <div className="row">
-                <Item
-                    key={uuidv4}
-                />
+                <Item />
             </div>
         </div>
         </>
