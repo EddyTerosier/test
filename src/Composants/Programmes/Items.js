@@ -1,7 +1,7 @@
 import React from 'react'
-import ProgrammeJson from "../../product.js"
+import ProgrammeJson from "../../programmes.json"
 
-export default function Item(props) {
+export default function Item() {
   return (
    <>
    {
@@ -9,7 +9,7 @@ export default function Item(props) {
          return (
             <div class="col-md-4">
                <div class="card mb-4 text-white bg-dark">
-                  <img class="card-img-top" src={programme.image} alt="Card image"/>
+                  <img class="card-img-top" src={`http://localhost:3000/img/${programme.image}`} alt="Card"/>
                   <div class="card-body">
                      <h5 class="card-title">{ programme.name }</h5>
                      <p class="card-text">{ programme.texte }</p>
@@ -23,3 +23,5 @@ export default function Item(props) {
    </>
   )
 }
+
+// {`./Assets/${programme.image}`} Pour le chemin des images Json

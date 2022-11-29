@@ -1,24 +1,23 @@
-{ "programmesJson" : [
+[
     {
-        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "id": 1,
+        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "name": "Débutant",
         "texte_btn": "Read more",
-        "image":"./Assets/Carousel.jpg"
+        "image":"Carousel.jpg"
     },
     {
-        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "id": 2,
+        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "name": "Intermédiaire",
         "texte_btn": "Read more",
-        "image": "Card3"
+        "image": "Carousel3.jpg"
     },
     {
-        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "id": 3,
+        "texte": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "name": "Expert",
         "texte_btn": "Read more",
-        "image": "Card2"
+        "image": "Carousel2.jpg"
     }
 ]
-}
